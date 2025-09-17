@@ -33,6 +33,7 @@ return {
           "prismals",
           "pyright",
           "eslint",
+          "clangd"
         },
       })
     end,
