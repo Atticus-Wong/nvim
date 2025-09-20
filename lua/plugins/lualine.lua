@@ -6,36 +6,39 @@ return {
       options = {
         theme = {
           normal = {
-            a = { fg = '#e0def4', bg = '#15191F' }, -- Text on your custom bg
-            b = { fg = '#9ccfd8', bg = '#15191F' }, -- Foam
+            a = { fg = '#15191F', bg = '#e0def4' }, -- Iris
+            b = { fg = '#45464D', bg = '#15191F' }, -- Foam
             c = { fg = '#e0def4', bg = '#15191F' },
           },
           insert = {
-            a = { fg = '#31748f', bg = '#15191F' }, -- Pine
-            b = { fg = '#9ccfd8', bg = '#15191F' }, -- Foam
+            a = { fg = '#15191F', bg = '#31748f' }, -- Iris
+            b = { fg = '#45464D', bg = '#15191F' }, -- Foam
             c = { fg = '#e0def4', bg = '#15191F' },
           },
           visual = {
-            a = { fg = '#c4a7e7', bg = '#15191F' }, -- Iris
-            b = { fg = '#9ccfd8', bg = '#15191F' }, -- Foam
+            a = { fg = '#15191F', bg = '#c4a7e7' }, -- Iris
+            b = { fg = '#45464D', bg = '#15191F' }, -- Foam
             c = { fg = '#e0def4', bg = '#15191F' },
           },
           replace = {
             a = { fg = '#eb6f92', bg = '#15191F' }, -- Love
-            b = { fg = '#9ccfd8', bg = '#15191F' }, -- Foam
+            b = { fg = '#45464D', bg = '#15191F' }, -- Foam
             c = { fg = '#e0def4', bg = '#15191F' },
           },
           command = {
-            a = { fg = '#f6c177', bg = '#15191F' }, -- Gold
-            b = { fg = '#9ccfd8', bg = '#15191F' }, -- Foam
+            a = { fg = '#15191F', bg = '#f6c177' }, -- Iris
+            b = { fg = '#45464D', bg = '#15191F' }, -- Foam
             c = { fg = '#e0def4', bg = '#15191F' },
           },
           inactive = {
             a = { fg = '#15191F', bg = '#15191F' },
-            b = { fg = '#9ccfd8', bg = '#15191F' }, -- Foam
+            b = { fg = '#45464D', bg = '#15191F' }, -- Foam
             c = { fg = '#e0def4', bg = '#15191F' },
           },
         },
+        icons_enabled = true,
+        component_separators = { left = '', right = ''},
+        section_separators = { left = '', right = ''},
       },
       sections = {
         lualine_a = {'mode'},
