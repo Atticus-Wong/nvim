@@ -48,13 +48,16 @@ return {
         list:select(current_index)
     end
 
-      vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end)
-      vim.keymap.set("n", "<leader>he", function() toggle_telescope(harpoon:list()) end,
+      vim.keymap.set("n", "<leader>pa", function() harpoon:list():add() end)
+      vim.keymap.set("n", "<leader>pe", function() toggle_telescope(harpoon:list()) end,
         { desc = "Open harpoon window" })
 
       -- Toggle previous & next buffers stored within Harpoon list
-      vim.keymap.set("n", "<leader>hp", function() nav_prev() end)
-      vim.keymap.set("n", "<leader>hn", function() nav_next() end)
+      vim.keymap.set("n", "<leader>pp", function() nav_prev() end)
+      vim.keymap.set("n", "<leader>pn", function() nav_next() end)
+      vim.keymap.set("n", "<leader>pl", function()
+        require("harpoon").ui:toggle_quick_menu(require("harpoon"):list())
+      end, { desc = "Harpoon menu" })
     end
 }
 

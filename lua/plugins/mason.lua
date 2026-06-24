@@ -33,7 +33,10 @@ return {
           "prismals",
           "pyright",
           "eslint",
-          "clangd"
+          "clangd",
+          "gopls",
+          "jdtls",
+          -- "copilot"
         },
       })
     end,
@@ -52,6 +55,8 @@ return {
           "black",
           "pylint",
           "eslint_d",
+          "ast-grep",
+          "google-java-format",
         },
       })
     end,

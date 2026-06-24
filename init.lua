@@ -8,11 +8,19 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.laststatus = 3
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
+vim.opt.wrap = false
+vim.opt.ignorecase = true
 
 vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "C-u>", "<C-u>zz")
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
+
+
+vim.keymap.set('n', '<leader>tw', function()
+  vim.opt.wrap = not vim.opt.wrap:get()
+  print("Wrap " .. (vim.opt.wrap:get() and "enabled" or "disabled"))
+end, { desc = "Toggle line wrap" })
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = 'Highlight when yanking (copying) text',
